@@ -1,0 +1,68 @@
+import { ExampleMessage } from "./types";
+
+export const exampleMessages: ExampleMessage[] = [
+  {
+    id: "fake-bank",
+    title: "Fake Bank Alert",
+    category: "Bank Impersonation",
+    description: "A typical phishing message pretending to be from a bank",
+    message: `URGENT: Unusual activity detected on your Chase account! Your account will be SUSPENDED within 24 hours unless you verify your identity immediately. Click here to confirm your account details: http://chase-secure-login.xyz/verify We need your account number, routing number, and PIN to restore access. Do NOT contact the bank directly as this will delay the process. Act NOW!`,
+    expectedRisk: "very-high",
+  },
+  {
+    id: "fake-delivery",
+    title: "Fake Delivery Message",
+    category: "Package Scam",
+    description: "A suspicious delivery notification with a malicious link",
+    message: `DHL Express: Your parcel cannot be delivered. Reschedule delivery here: http://dhl-tracking-notice.top/r/abc123 Please enter your full name, address, and phone number to reschedule. A small redelivery fee of $2.99 is required. Pay with gift card or cryptocurrency.`,
+    expectedRisk: "very-high",
+  },
+  {
+    id: "fake-job",
+    title: "Fake Job Offer",
+    category: "Employment Scam",
+    description: "An unsolicited job offer that's too good to be true",
+    message: `Congratulations! You've been selected for a work from home position earning $5,000/week! No experience needed. Flexible hours, immediate start. We just need you to verify your identity with your bank account details and social security number to set up payroll. Reply to this message or contact my agent on WhatsApp at +1-555-0199 for details. This is a legitimate opportunity - trust me, it's 100% real! Keep this between us for now.`,
+    expectedRisk: "very-high",
+  },
+  {
+    id: "fake-prize",
+    title: "Fake Lottery / Prize",
+    category: "Prize Scam",
+    description: "A message claiming you've won a prize you never entered",
+    message: `CONGRATULATIONS!!! You have WON $1,000,000 in the International Lottery Program!!! To claim your prize of $1,000,000.00, you must act now within 24 hours. Send your full name, address, bank account number, and a processing fee of $50 via iTunes gift card. This is not a scam! Reply immediately with your details. Winners are selected randomly and you are the lucky winner!!!`,
+    expectedRisk: "very-high",
+  },
+  {
+    id: "fake-investment",
+    title: "Fake Investment Opportunity",
+    category: "Investment Scam",
+    description: "An unsolicited investment opportunity promising guaranteed returns",
+    message: `Hi! I'm a financial advisor and I've discovered a guaranteed investment that returns 500% in just 30 days. Risk-free crypto trading bot that makes money every day. Our clients earn $10,000+ per month passively. Invest now for exclusive access! Only 5 spots left! Double your money with zero risk. Send Bitcoin to my wallet to get started. This is a legitimate opportunity - don't miss out on financial freedom!`,
+    expectedRisk: "very-high",
+  },
+  {
+    id: "social-engineering",
+    title: "Suspicious Social Message",
+    category: "Social Engineering",
+    description: "A manipulative message from an unknown contact",
+    message: `Hello dear friend, How are you doing today? I am Mrs. Patricia, a widow from Syria. I have $4.5 million USD I need to transfer urgently. I need your help to receive this money. I will give you 30% for your help. Please keep this confidential and don't tell anyone about this. Move to my private email: mrs.patricia@gmail.com for more details. God bless you. Kindly respond urgently.`,
+    expectedRisk: "very-high",
+  },
+  {
+    id: "otp-scam",
+    title: "OTP / Verification Scam",
+    category: "Credential Theft",
+    description: "A message trying to steal one-time passwords",
+    message: `Amazon Security Alert: Someone tried to access your account from an unknown device. We are temporarily locking your account for safety. Please verify it's you by sharing the OTP code sent to your phone. Send your verification code to 555-0199 immediately or your account will be closed permanently. This is urgent!!`,
+    expectedRisk: "very-high",
+  },
+  {
+    id: "legitimate",
+    title: "Legitimate Notification",
+    category: "Normal Message",
+    description: "A relatively normal, legitimate-looking notification",
+    message: `Your package from Order #4521 has been shipped via FedEx. Expected delivery: Thursday, August 20. Tracking number: FX9876543210. Track your package at fedex.com. Questions? Contact us at 1-800-463-3339.`,
+    expectedRisk: "low",
+  },
+];

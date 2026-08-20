@@ -1,0 +1,36 @@
+{
+  "name": "scamlens",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ScamLens — Spot the Red Flags Before You Click",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest --config jest.config.js",
+    "test:watch": "jest --config jest.config.js --watch"
+  },
+  "dependencies": {
+    "next": "^15.3.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "lucide-react": "^0.511.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.3",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "eslint": "^9.27.0",
+    "eslint-config-next": "^15.3.5",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.4",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^4.1.8",
+    "@tailwindcss/postcss": "^4.1.8",
+    "typescript": "^5.8.3",
+    "@typescript-eslint/eslint-plugin": "^8.33.0",
+    "@typescript-eslint/parser": "^8.33.0"
+  }
+}
